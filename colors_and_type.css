@@ -1,0 +1,266 @@
+/* =========================================================================
+   BAYトレ — Design Tokens
+   colors · type · spacing · radii · shadows · motion
+   ------------------------------------------------------------------------
+   Load Google Fonts (or substitute with licensed equivalents):
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+   And Lucide icons (CDN substitution):
+     <script src="https://unpkg.com/lucide@latest"></script>
+   ========================================================================= */
+
+:root {
+  /* ----------------------------------------------------------------- COLOR */
+
+  /* Ocean — primary. Foam → sea → deep. */
+  --ocean-50:   #F2F9FB;
+  --ocean-100:  #DDF1F4;
+  --ocean-200:  #B8DDE8;
+  --ocean-300:  #87CEDA;
+  --ocean-400:  #4FB3CC;
+  --ocean-500:  #2A8FB7;   /* primary brand blue */
+  --ocean-600:  #1F6E94;
+  --ocean-700:  #154E70;
+  --ocean-800:  #0E3954;
+  --ocean-900:  #0B2A3E;   /* deep navy — body text on light */
+
+  /* Sand — neutral. Paper → driftwood. */
+  --sand-50:    #FBF8F1;   /* page background */
+  --sand-100:   #F5EFE0;
+  --sand-200:   #E8DFC9;
+  --sand-300:   #D6CAAE;
+  --sand-400:   #B5A684;
+  --sand-500:   #8C7E5E;
+  --sand-600:   #6B6253;
+  --sand-700:   #4A4438;
+  --sand-800:   #2C261C;
+  --sand-900:   #1A140C;
+
+  /* Sunrise — accent (used once per screen). */
+  --coral-300:  #FFC0AC;
+  --coral-500:  #FF7A5C;   /* primary accent */
+  --coral-600:  #E85D3F;
+
+  /* Semantic — coastline at different moments. */
+  --success:    #2EA88A;   /* kelp */
+  --warning:    #F2B73D;   /* sunset gold */
+  --danger:     #D64545;   /* coral red */
+  --info:       var(--ocean-500);
+
+  /* Foreground / background semantic aliases */
+  --bg:         var(--sand-50);
+  --bg-elev:    #FFFFFF;
+  --bg-tide:    linear-gradient(180deg, var(--ocean-100) 0%, var(--sand-50) 100%);
+  --bg-sunrise: linear-gradient(180deg, var(--sand-50) 0%, var(--coral-300) 100%);
+  --bg-deep:    var(--ocean-900);
+
+  --fg:         var(--ocean-900);
+  --fg-1:       var(--ocean-900);   /* highest contrast — headlines, body */
+  --fg-2:       var(--ocean-700);   /* secondary text */
+  --fg-3:       var(--sand-600);    /* tertiary, captions, meta */
+  --fg-on-deep: var(--sand-50);     /* text on --bg-deep */
+
+  --border:     var(--ocean-100);
+  --border-strong: var(--ocean-200);
+  --divider:    color-mix(in oklab, var(--ocean-900) 8%, transparent);
+
+  --link:       var(--ocean-600);
+  --link-hover: var(--ocean-800);
+
+  /* -------------------------------------------------------------------- TYPE */
+
+  --font-display-jp: 'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  --font-display-en: 'Bricolage Grotesque', 'Zen Kaku Gothic New', sans-serif;
+  --font-body:       'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  --font-mono:       'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Type scale — modular, tight at the top. */
+  --fs-12: 0.75rem;     /* 12 — captions, meta */
+  --fs-14: 0.875rem;    /* 14 — small body */
+  --fs-16: 1rem;        /* 16 — body */
+  --fs-18: 1.125rem;    /* 18 — large body */
+  --fs-20: 1.25rem;     /* 20 — lede */
+  --fs-24: 1.5rem;      /* 24 — h4 */
+  --fs-32: 2rem;        /* 32 — h3 */
+  --fs-40: 2.5rem;      /* 40 — h2 */
+  --fs-56: 3.5rem;      /* 56 — h1 (mobile hero) */
+  --fs-80: 5rem;        /* 80 — display (desktop hero) */
+
+  /* Line heights — generous for JP readability. */
+  --lh-tight:   1.1;
+  --lh-snug:    1.3;
+  --lh-normal:  1.6;
+  --lh-relaxed: 1.85;   /* default for JP body */
+
+  /* Letter spacing */
+  --tracking-tight: -0.02em;   /* large display */
+  --tracking-normal: 0;
+  --tracking-wide:  0.06em;
+  --tracking-en-cap: 0.18em;   /* English all-caps section labels */
+
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  /* ----------------------------------------------------------------- SPACING */
+
+  --space-1:  0.25rem;   /* 4 */
+  --space-2:  0.5rem;    /* 8 */
+  --space-3:  0.75rem;   /* 12 */
+  --space-4:  1rem;      /* 16 */
+  --space-6:  1.5rem;    /* 24 */
+  --space-8:  2rem;      /* 32 */
+  --space-12: 3rem;      /* 48 */
+  --space-16: 4rem;      /* 64 */
+  --space-24: 6rem;      /* 96 */
+  --space-32: 8rem;      /* 128 */
+
+  /* ----------------------------------------------------------------- RADIUS */
+
+  --radius-sm:   8px;
+  --radius:     16px;    /* default */
+  --radius-lg:  24px;    /* cards */
+  --radius-xl:  32px;
+  --radius-pill: 999px;
+
+  /* ---------------------------------------------------------------- SHADOWS */
+
+  --shadow-sm: 0 1px 2px rgba(11, 42, 62, 0.04),
+               0 2px 8px rgba(11, 42, 62, 0.04);
+  --shadow-md: 0 2px 6px rgba(11, 42, 62, 0.06),
+               0 12px 24px -8px rgba(11, 42, 62, 0.08);
+  --shadow-lg: 0 8px 24px rgba(11, 42, 62, 0.08),
+               0 24px 48px -12px rgba(11, 42, 62, 0.10);
+  --shadow-focus: 0 0 0 2px var(--bg-elev), 0 0 0 4px var(--ocean-500);
+
+  /* ------------------------------------------------------------------ MOTION */
+
+  --ease-tide:   cubic-bezier(0.22, 0.61, 0.36, 1);   /* slow-out wave */
+  --ease-glide:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast:    120ms;
+  --dur:         280ms;
+  --dur-slow:    600ms;
+  --dur-hero:    800ms;
+
+  /* -------------------------------------------------------------- LAYOUT */
+
+  --container-max: 1200px;
+  --container-pad: var(--space-6);
+  --header-h:      72px;
+}
+
+/* =========================================================================
+   Base + semantic element styles
+   ========================================================================= */
+
+html, body {
+  background: var(--bg);
+  color: var(--fg-1);
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+.h-display, h1.display {
+  font-family: var(--font-display-jp);
+  font-weight: var(--weight-black);
+  font-size: clamp(var(--fs-56), 8vw, var(--fs-80));
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+h1, .h1 {
+  font-family: var(--font-display-jp);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-56);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--fg-1);
+}
+h2, .h2 {
+  font-family: var(--font-display-jp);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-40);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+}
+h3, .h3 {
+  font-family: var(--font-display-jp);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-32);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+h4, .h4 {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-24);
+  line-height: var(--lh-snug);
+  color: var(--fg-1);
+}
+
+/* English all-caps eyebrow / section label */
+.eyebrow, .h-eyebrow {
+  font-family: var(--font-display-en);
+  font-weight: var(--weight-bold);
+  font-size: var(--fs-12);
+  letter-spacing: var(--tracking-en-cap);
+  text-transform: uppercase;
+  color: var(--ocean-500);
+}
+
+/* Body */
+p, .body {
+  font-family: var(--font-body);
+  font-size: var(--fs-16);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-1);
+  text-wrap: pretty;
+}
+.body-lg { font-size: var(--fs-18); }
+.body-sm { font-size: var(--fs-14); color: var(--fg-2); }
+.caption  { font-size: var(--fs-12); color: var(--fg-3); letter-spacing: 0.02em; }
+
+/* Mono / numerics */
+.mono, code, kbd, samp {
+  font-family: var(--font-mono);
+  font-size: 0.95em;
+  font-feature-settings: "tnum" 1, "zero" 1;
+}
+
+/* Links */
+a {
+  color: var(--link);
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color var(--dur) var(--ease-tide),
+              color var(--dur) var(--ease-tide);
+}
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: currentColor;
+}
+
+/* Focus — never hidden */
+:focus-visible {
+  outline: 2px solid var(--ocean-500);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

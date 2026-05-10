@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <rect width="600" height="360" fill="#DDF1F4"></rect>
+  
+  <g stroke="#1F6E94" stroke-width="2" stroke-linecap="round">
+    
+    <line x1="300" y1="40" x2="300" y2="320" stroke-dasharray="4 6" opacity="0.4"></line>
+  </g>
+  <g fill="#0B2A3E">
+    
+    <circle cx="296" cy="80" r="22"></circle>
+    <path d="M286 102 L 282 130 L 318 130 L 314 102 Z"></path>
+    <path d="M280 130 Q 268 200, 282 240 L 320 240 Q 332 200, 320 130 Z"></path>
+    <path d="M286 240 L 282 320 L 302 320 L 304 240 Z"></path>
+    <path d="M298 240 L 312 320 L 326 320 L 318 240 Z"></path>
+    
+    <path d="M318 140 L 326 220 L 320 222 L 312 142 Z"></path>
+  </g>
+  
+  <g fill="#2A8FB7">
+    <circle cx="298" cy="80" r="4"></circle>
+    <circle cx="298" cy="135" r="4"></circle>
+    <circle cx="298" cy="200" r="4"></circle>
+    <circle cx="298" cy="260" r="4"></circle>
+    <circle cx="298" cy="318" r="4"></circle>
+  </g>
+  
+  <g font-family="ui-monospace, monospace" font-size="10" fill="#1F6E94">
+    <text x="320" y="84">耳</text>
+    <text x="320" y="139">肩</text>
+    <text x="320" y="204">骨盤</text>
+    <text x="320" y="264">膝</text>
+    <text x="320" y="322">踝</text>
+  </g>
+</svg>

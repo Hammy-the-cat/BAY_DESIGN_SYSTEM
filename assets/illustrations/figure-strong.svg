@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDF1F4"></stop>
+      <stop offset="100%" stop-color="#87CEDA"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="800" fill="url(#sg)"></rect>
+  
+  <g fill="#0B2A3E">
+    
+    <circle cx="300" cy="120" r="36"></circle>
+    
+    <rect x="290" y="150" width="20" height="14"></rect>
+    
+    <path d="M260 168 L 250 250 L 270 360 L 330 360 L 350 250 L 340 168 Z"></path>
+    
+    <path d="M250 200 Q 220 270, 220 360 L 240 360 Q 245 280, 270 220 Z"></path>
+    <path d="M350 200 Q 380 270, 380 360 L 360 360 Q 355 280, 330 220 Z"></path>
+    
+    <circle cx="228" cy="370" r="9"></circle>
+    <circle cx="372" cy="370" r="9"></circle>
+    
+    <path d="M278 360 L 268 700 L 296 700 L 300 360 Z"></path>
+    <path d="M322 360 L 332 700 L 304 700 L 300 360 Z"></path>
+  </g>
+  
+  <ellipse cx="300" cy="708" rx="80" ry="6" fill="#0B2A3E" opacity="0.25"></ellipse>
+  
+  <line x1="60" y1="708" x2="540" y2="708" stroke="#1F6E94" stroke-width="1" opacity="0.5"></line>
+</svg>

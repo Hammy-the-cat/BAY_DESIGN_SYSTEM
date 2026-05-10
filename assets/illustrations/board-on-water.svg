@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDF1F4"></stop>
+      <stop offset="100%" stop-color="#87CEDA"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g1)"></rect>
+
+  
+  <circle cx="600" cy="170" r="70" fill="#FBF8F1" opacity="0.9"></circle>
+
+  
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#1F6E94" stroke-width="1" opacity="0.4"></line>
+
+  
+  <rect y="320" width="800" height="280" fill="#2A8FB7"></rect>
+
+  
+  <g stroke="#FBF8F1" stroke-width="1.5" fill="none" opacity="0.55">
+    <path d="M0 360 Q 100 350, 200 360 T 400 360 T 600 360 T 800 360"></path>
+    <path d="M0 400 Q 100 388, 200 400 T 400 400 T 600 400 T 800 400" opacity="0.8"></path>
+    <path d="M0 450 Q 100 436, 200 450 T 400 450 T 600 450 T 800 450" opacity="0.6"></path>
+    <path d="M0 510 Q 100 494, 200 510 T 400 510 T 600 510 T 800 510" opacity="0.5"></path>
+  </g>
+
+  
+  <g transform="translate(380 460) rotate(-8)">
+    <ellipse cx="0" cy="6" rx="120" ry="6" fill="#0B2A3E" opacity="0.25"></ellipse>
+    <path d="M-110 0 Q -110 -14, -90 -14 L 90 -14 Q 120 -14, 120 0 Q 120 14, 90 14 L -90 14 Q -110 14, -110 0 Z" fill="#FBF8F1"></path>
+    <line x1="-90" y1="0" x2="90" y2="0" stroke="#2A8FB7" stroke-width="1"></line>
+  </g>
+</svg>

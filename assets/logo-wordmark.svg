@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 110" fill="none">
+  
+  <text x="0" y="68" class="script" font-size="72" fill="#0B2A3E">Bay training</text>
+  <text x="232" y="68" class="script" font-size="72" fill="#2A8FB7">gym</text>
+  <line x1="0" y1="84" x2="42" y2="84" stroke="#B8DDE8" stroke-width="1"></line>
+  <text x="50" y="88" class="cap" font-size="9.5" fill="#6B6253">PERSONAL · MIYAZAKI</text>
+  <line x1="195" y1="84" x2="358" y2="84" stroke="#B8DDE8" stroke-width="1"></line>
+</svg>

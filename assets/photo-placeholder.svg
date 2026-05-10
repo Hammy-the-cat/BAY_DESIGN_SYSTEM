@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DDF1F4"></stop>
+      <stop offset="100%" stop-color="#0E3954"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"></rect>
+  <g stroke="#FBF8F1" stroke-width="1" fill="none" opacity="0.35">
+    <path d="M0 380 Q 100 360, 200 380 T 400 380 T 600 380 T 800 380"></path>
+    <path d="M0 440 Q 100 420, 200 440 T 400 440 T 600 440 T 800 440"></path>
+    <path d="M0 500 Q 100 480, 200 500 T 400 500 T 600 500 T 800 500"></path>
+  </g>
+  <text x="400" y="305" font-family="&#39;Bricolage Grotesque&#39;, sans-serif" font-size="14" letter-spacing="3" fill="#FBF8F1" opacity="0.7" text-anchor="middle">PLACEHOLDER · TRAINING / SESSION PHOTO</text>
+</svg>

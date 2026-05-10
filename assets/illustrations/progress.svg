@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" fill="none">
+  <rect width="600" height="360" fill="#F2F9FB"></rect>
+  
+  <g stroke="#B8DDE8" stroke-width="1.5">
+    <line x1="60" y1="60" x2="60" y2="300"></line>
+    <line x1="60" y1="300" x2="540" y2="300"></line>
+  </g>
+  
+  <g stroke="#DDF1F4" stroke-width="1">
+    <line x1="60" y1="120" x2="540" y2="120"></line>
+    <line x1="60" y1="180" x2="540" y2="180"></line>
+    <line x1="60" y1="240" x2="540" y2="240"></line>
+  </g>
+  
+  <path d="M60 270 Q 160 250, 220 220 T 380 140 T 520 80" stroke="#2A8FB7" stroke-width="3" fill="none" stroke-linecap="round"></path>
+  
+  <path d="M60 270 Q 160 250, 220 220 T 380 140 T 520 80 L 520 300 L 60 300 Z" fill="#87CEDA" opacity="0.25"></path>
+  
+  <g fill="#0B2A3E">
+    <circle cx="60" cy="270" r="5"></circle>
+    <circle cx="220" cy="220" r="5"></circle>
+    <circle cx="380" cy="140" r="5"></circle>
+    <circle cx="520" cy="80" r="5"></circle>
+  </g>
+  
+  <g font-family="ui-monospace, monospace" font-size="11" fill="#6B6253">
+    <text x="50" y="320">W1</text>
+    <text x="208" y="320">W4</text>
+    <text x="368" y="320">W8</text>
+    <text x="508" y="320">W12</text>
+  </g>
+  <text x="60" y="44" font-family="&#39;Bricolage Grotesque&#39;, sans-serif" font-weight="700" font-size="11" letter-spacing="2.5" fill="#2A8FB7">PROGRESS · 12 WEEKS</text>
+</svg>

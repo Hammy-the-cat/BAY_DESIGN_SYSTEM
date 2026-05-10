@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>Radii & Shadows</title>
+<style>
+html,body{margin:0;padding:0;background:#FBF8F1;color:#0B2A3E;font-family:'Noto Sans JP',sans-serif}
+.wrap{padding:24px 28px;display:flex;flex-direction:column;gap:18px}
+.label{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:10px;letter-spacing:2.5px;color:#2A8FB7;text-transform:uppercase}
+.row{display:flex;gap:14px;align-items:flex-end}
+.tile{background:#fff;border:1px solid #DDF1F4;display:flex;align-items:center;justify-content:center;font-family:ui-monospace,monospace;font-size:10px;color:#6B6253;text-align:center;flex-direction:column;gap:2px}
+.tile b{font-family:'Bricolage Grotesque',sans-serif;color:#0B2A3E;font-size:10px;letter-spacing:1.5px}
+.r-sm{width:64px;height:64px;border-radius:8px}
+.r{width:64px;height:64px;border-radius:16px}
+.r-lg{width:64px;height:64px;border-radius:24px}
+.r-xl{width:64px;height:64px;border-radius:32px}
+.r-pill{width:120px;height:48px;border-radius:999px}
+.s-sm{width:84px;height:56px;border-radius:14px;box-shadow:0 1px 2px rgba(11,42,62,0.04),0 2px 8px rgba(11,42,62,0.04)}
+.s-md{width:84px;height:56px;border-radius:14px;box-shadow:0 2px 6px rgba(11,42,62,0.06),0 12px 24px -8px rgba(11,42,62,0.08)}
+.s-lg{width:84px;height:56px;border-radius:14px;box-shadow:0 8px 24px rgba(11,42,62,0.08),0 24px 48px -12px rgba(11,42,62,0.10)}
+</style></head>
+<body>
+<div class="wrap">
+  <div>
+    <div class="label">Radii</div>
+    <div class="row" style="margin-top:8px">
+      <div class="tile r-sm"><b>SM</b><span>8</span></div>
+      <div class="tile r"><b>BASE</b><span>16</span></div>
+      <div class="tile r-lg"><b>LG</b><span>24</span></div>
+      <div class="tile r-xl"><b>XL</b><span>32</span></div>
+      <div class="tile r-pill"><b>PILL</b><span>999</span></div>
+    </div>
+  </div>
+  <div>
+    <div class="label">Elevation · soft, salt-aired</div>
+    <div class="row" style="margin-top:8px">
+      <div class="tile s-sm"><b>SHADOW-SM</b></div>
+      <div class="tile s-md"><b>SHADOW-MD</b></div>
+      <div class="tile s-lg"><b>SHADOW-LG</b></div>
+    </div>
+  </div>
+</div>
+</body></html>
