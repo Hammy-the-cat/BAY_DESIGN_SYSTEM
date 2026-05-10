@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <base href="ui_kits/landing_page/">
   <title>BAYトレ — Personal Training, Miyazaki</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +33,6 @@
   <script type="text/babel">
     function App() {
       React.useEffect(() => {
-        // Refresh Lucide icons after each render so React-mounted <i data-lucide> are replaced.
         const id = setTimeout(() => window.lucide && window.lucide.createIcons(), 0);
         return () => clearTimeout(id);
       });
