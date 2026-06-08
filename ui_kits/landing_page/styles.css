@@ -65,6 +65,13 @@ body::before {
   text-decoration: none;
 }
 
+.logo-wide {
+  width: 170px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0,0,0,0.42));
+}
+
 .logo-mark {
   width: 40px;
   height: 40px;
@@ -396,10 +403,10 @@ body::before {
 
 .hero-brand-logo {
   grid-row: 1 / span 5;
-  width: min(430px, 38vw);
+  width: min(520px, 42vw);
   justify-self: center;
   height: auto;
-  border-radius: 34px;
+  border-radius: 28px;
   border: 1px solid var(--lux-line-strong);
   background: #050506;
   box-shadow:
@@ -469,9 +476,9 @@ body::before {
     padding-top: 112px;
   }
   .hero-brand-logo {
-    width: min(280px, 78vw);
+    width: min(340px, 86vw);
     align-self: center;
-    border-radius: 24px;
+    border-radius: 22px;
   }
   .hero-title { font-size: clamp(2.7rem, 13vw, 4.4rem); }
 }
@@ -905,13 +912,7 @@ body::before {
   gap: var(--space-4);
 }
 
-.footer-brand-logo {
-  width: 190px;
-  height: auto;
-  border-radius: 20px;
-  border: 1px solid var(--lux-line);
-  box-shadow: 0 18px 44px rgba(0,0,0,0.36);
-}
+.footer-logo-wide { width: 220px; }
 
 .footer-tagline { margin: 0; color: var(--lux-muted); font-size: 14px; }
 .footer-social { display: flex; gap: 12px; }
@@ -960,6 +961,7 @@ body::before {
 @media (max-width: 520px) {
   .container { padding: 0 var(--space-4); }
   .site-header { height: 70px; }
+  .logo-wide { width: 118px; }
   .logo-bay { font-size: 20px; }
   .logo-mark-real { width: 40px; height: 40px; }
   .site-header .btn { display: none; }

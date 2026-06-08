@@ -12,12 +12,8 @@ function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <a href="#top" className="logo">
-            <img src="../../assets/bay-training-gym-mark.png" alt="" className="logo-mark logo-mark-real" />
-            <span className="logo-word">
-              <span className="logo-bay">BAY</span><span className="logo-tore">training gym</span>
-            </span>
+            <img src="../../assets/bay-bodyweight-logo-c.png" alt="BAY training gym" className="logo-wide footer-logo-wide" />
           </a>
-          <img className="footer-brand-logo" src="../../assets/bay-training-gym-logo.png" alt="BAY training gym" />
           <p className="footer-tagline">
             理学療法士考案のトレーニングで、<br/>
             姿勢×動作を整え、理想の身体に。

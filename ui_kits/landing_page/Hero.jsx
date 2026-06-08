@@ -9,7 +9,7 @@ function Hero() {
       </div>
 
       <div className="container hero-inner">
-        <img className="hero-brand-logo" src="../../assets/bay-training-gym-logo.png" alt="BAY training gym" />
+        <img className="hero-brand-logo" src="../../assets/bay-bodyweight-logo-c.png" alt="BAY training gym" />
         <span className="eyebrow eyebrow-on-deep">PERSONAL TRAINING · MIYAZAKI</span>
         <h1 className="hero-title">
           姿勢を整え、<br/>
