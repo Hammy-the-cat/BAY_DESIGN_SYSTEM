@@ -2,11 +2,11 @@
 
 function Method() {
   const steps = [
-    { n: '01', en: 'ASSESS', jp: '姿勢・動作を評価', ill: '../../assets/illustrations/posture.svg',
+    { n: '01', en: 'ASSESS', jp: '姿勢・動作を評価', ill: '../../assets/method-assess-photo.png',
       body: '理学療法士が骨格・関節・動作のクセをチェックし、改善ポイントを見つけます。' },
-    { n: '02', en: 'TRAIN',  jp: 'パーソナル指導', ill: '../../assets/illustrations/equipment.svg',
+    { n: '02', en: 'TRAIN',  jp: 'パーソナル指導', ill: '../../assets/method-train-photo.png',
       body: 'マンツーマンで、あなた専用のメニューを実施。フォームを丁寧に修正します。' },
-    { n: '03', en: 'TRACK',  jp: '進捗を可視化', ill: '../../assets/illustrations/progress.svg',
+    { n: '03', en: 'TRACK',  jp: '進捗を可視化', ill: '../../assets/method-track-photo.png',
       body: '体組成・可動域・動作の変化を毎月計測。目に見える成果を確認できます。' },
   ];
   return (
