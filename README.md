@@ -1,5 +1,42 @@
 # BAYトレ — Design System
 
+## Current Website (September 2026)
+
+The live landing page is the root `index.html`, with styles in
+`ui_kits/landing_page/site.css` and progressive interactions in
+`ui_kits/landing_page/site.js`. Open the root HTML directly to preview; no build
+step, React runtime, or CDN connection is required. The nested landing-page
+entry redirects to the root and preserves the URL fragment.
+
+The gym name is unchanged. The current logo is the owner-supplied image at
+`assets/bay-monogram-logo.png`, preserved without image edits. The LP uses the
+owner's actual studio/training photos and two supplied recordings as subdued
+background media. The three AI-generated training photos have been removed.
+Confirm prices, program details, credentials, and studio/contact
+information with the owner before publishing.
+
+The earlier JSX components, `styles.css`, tokens, and the design-system notes
+below are retained as historical reference; they do not style the current LP.
+Edit the three current website files above for future LP changes.
+
+The separate `profile.html` page is linked only from the LP footer, keeping the
+main booking flow unchanged. It uses `ui_kits/landing_page/profile.css`, the
+owner-provided introduction, and the unedited `assets/bay-profile-background.png`.
+Profile text represents the owner's supplied statements, not independently
+verified claims.
+
+Background media: `bay-studio-interior.png`, `bay-bodyweight-training.png`,
+`bay-pullup-training.mp4` (172007 recording), and `bay-balance-training.mp4`
+(171853 recording), all in `assets/`. Original files are preserved without
+cropping or re-encoding. Videos play muted only while their section is visible,
+with a pause button. Reduced-motion and data-saving preferences disable automatic
+playback; the supplied photo remains as the poster. No video source is loaded
+until playback is needed. The original recordings total approximately 28 MB.
+
+Structure references: [RIZAP](https://www.rizap.jp/) and
+[THE PERSONAL GYM](https://the-personal-gym.com/). No third-party copy or imagery
+is used in the remake.
+
 > **海を整えるように、身体を整える。**
 > Ocean-inspired training, designed by physical therapists.
 

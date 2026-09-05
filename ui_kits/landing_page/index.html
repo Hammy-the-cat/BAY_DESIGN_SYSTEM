@@ -3,55 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>BAYトレ — Personal Training, Miyazaki</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../../colors_and_type.css">
-  <link rel="stylesheet" href="styles.css">
-
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+  <title>BAY training gym</title>
+  <script>location.replace("../../index.html" + location.search + location.hash);</script>
 </head>
-<body>
-  <div id="root"></div>
-
-  <script type="text/babel" src="Header.jsx"></script>
-  <script type="text/babel" src="Hero.jsx"></script>
-  <script type="text/babel" src="Method.jsx"></script>
-  <script type="text/babel" src="Programs.jsx"></script>
-  <script type="text/babel" src="Studios.jsx"></script>
-  <script type="text/babel" src="Trainer.jsx"></script>
-  <script type="text/babel" src="CTABand.jsx"></script>
-  <script type="text/babel" src="Footer.jsx"></script>
-
-  <script type="text/babel">
-    function App() {
-      React.useEffect(() => {
-        // Refresh Lucide icons after each render so React-mounted <i data-lucide> are replaced.
-        const id = setTimeout(() => window.lucide && window.lucide.createIcons(), 0);
-        return () => clearTimeout(id);
-      });
-      return (
-        <>
-          <Header />
-          <main>
-            <Hero />
-            <Method />
-            <Programs />
-            <Studios />
-            <Trainer />
-            <CTABand />
-          </main>
-          <Footer />
-        </>
-      );
-    }
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-  </script>
-</body>
+<body><p><a href="../../index.html">BAY training gym サイトへ</a></p></body>
 </html>

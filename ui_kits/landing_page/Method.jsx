@@ -2,11 +2,11 @@
 
 function Method() {
   const steps = [
-    { n: '01', en: 'ASSESS', jp: '姿勢・動作を評価', ill: '../../assets/method-assess-photo.png',
+    { n: '01', en: 'ASSESS', jp: '姿勢・動作を評価',
       body: '理学療法士が骨格・関節・動作のクセをチェックし、改善ポイントを見つけます。' },
-    { n: '02', en: 'TRAIN',  jp: 'パーソナル指導', ill: '../../assets/method-train-photo.png',
+    { n: '02', en: 'TRAIN',  jp: 'パーソナル指導',
       body: 'マンツーマンで、あなた専用のメニューを実施。フォームを丁寧に修正します。' },
-    { n: '03', en: 'TRACK',  jp: '進捗を可視化', ill: '../../assets/method-track-photo.png',
+    { n: '03', en: 'TRACK',  jp: '進捗を可視化',
       body: '体組成・可動域・動作の変化を毎月計測。目に見える成果を確認できます。' },
   ];
   return (
@@ -24,7 +24,6 @@ function Method() {
         <ol className="method-grid">
           {steps.map(s => (
             <li key={s.n} className="method-card">
-              <div className="method-illust"><img src={s.ill} alt="" /></div>
               <span className="method-num">{s.n}</span>
               <div className="method-en">{s.en}</div>
               <div className="method-jp">{s.jp}</div>

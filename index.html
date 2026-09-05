@@ -3,55 +3,124 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <base href="ui_kits/landing_page/">
-  <title>BAYトレ — Personal Training, Miyazaki</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="../../colors_and_type.css">
-  <link rel="stylesheet" href="styles.css">
-
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+  <meta name="theme-color" content="#101211">
+  <meta name="description" content="宮崎の自重トレーニングジム、BAY training gym。姿勢・動作の評価から、マンツーマンの指導、進捗の確認まで。日南・都城のスタジオとオンラインで、自分らしく動ける身体づくりを。">
+  <title>BAY training gym | 宮崎の自重トレーニングジム</title>
+  <link rel="icon" type="image/png" href="assets/bay-monogram-logo.png">
+  <link rel="stylesheet" href="ui_kits/landing_page/site.css">
+  <script src="ui_kits/landing_page/site.js" defer></script>
 </head>
-<body>
-  <div id="root"></div>
+<body id="top">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="BAY training gym トップ">
+        <img src="assets/bay-monogram-logo.png" alt="BAY training gym" width="198" height="210">
+      </a>
+      <nav class="desktop-nav" aria-label="メインメニュー">
+        <a href="#about">BAYについて</a><a href="#method">トレーニング</a><a href="#plans">コース・料金</a><a href="#studios">店舗</a><a href="#faq">よくある質問</a>
+      </nav>
+      <a class="button header-cta" href="#booking">体験を相談する <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="スマートフォンメニュー" hidden>
+      <a href="#about">BAYについて</a><a href="#method">トレーニング</a><a href="#plans">コース・料金</a><a href="#studios">店舗</a><a href="#flow">体験の流れ</a><a href="#faq">よくある質問</a><a href="#booking">体験を相談する ↗</a>
+    </nav>
+  </header>
 
-  <script type="text/babel" src="Header.jsx"></script>
-  <script type="text/babel" src="Hero.jsx"></script>
-  <script type="text/babel" src="Method.jsx"></script>
-  <script type="text/babel" src="Programs.jsx"></script>
-  <script type="text/babel" src="Studios.jsx"></script>
-  <script type="text/babel" src="Trainer.jsx"></script>
-  <script type="text/babel" src="CTABand.jsx"></script>
-  <script type="text/babel" src="Footer.jsx"></script>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <video id="hero-film" class="ambient-video hero-film" data-src="assets/bay-pullup-training.mp4" poster="assets/bay-bodyweight-training.png" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+      <div class="hero-shade"></div>
+      <div class="hero-inner wrap">
+        <p class="eyebrow">MIYAZAKI / BODYWEIGHT TRAINING</p>
+        <h1 id="hero-title">BAY<span>training gym</span></h1>
+        <p class="hero-message">自分の身体が、<br>いちばんの可能性になる。</p>
+        <p class="hero-description">姿勢を知る。動きを磨く。自重で鍛える。<br>あなたに合わせた、パーソナルトレーニング。</p>
+        <div class="hero-actions"><a class="button" href="#booking">体験トレーニングを相談 <span aria-hidden="true">↗</span></a><a class="text-link" href="#method">BAYのトレーニング <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="hero-bottom wrap"><span>NICHINAN / MIYAKONOJO / ONLINE</span><a href="#about">DISCOVER BAY <span aria-hidden="true">↓</span></a></div>
+      <button class="video-toggle" type="button" data-video="hero-film" aria-controls="hero-film" aria-label="背景動画を再生" title="背景動画を再生" aria-pressed="false" hidden><span aria-hidden="true">▶</span></button>
+    </section>
 
-  <script type="text/babel">
-    function App() {
-      React.useEffect(() => {
-        const id = setTimeout(() => window.lucide && window.lucide.createIcons(), 0);
-        return () => clearTimeout(id);
-      });
-      return (
-        <>
-          <Header />
-          <main>
-            <Hero />
-            <Method />
-            <Programs />
-            <Studios />
-            <Trainer />
-            <CTABand />
-          </main>
-          <Footer />
-        </>
-      );
-    }
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-  </script>
+    <div class="quick-bar"><div class="wrap quick-inner"><p><span class="small-label">FIRST STEP</span> はじめての方も、ここから。</p><a href="#plans">コース・料金を見る <span aria-hidden="true">↗</span></a><a href="#studios">スタジオを探す <span aria-hidden="true">↗</span></a></div></div>
+
+    <section id="about" class="section light">
+      <div class="wrap about-layout">
+        <div><p class="eyebrow">01 / ABOUT BAY</p><h2>鍛える前に、<br>身体を知る。</h2></div>
+        <div class="about-copy"><p class="lead">大切なのは、重さよりも、動きの質。</p><p>BAY training gymは、自分の体重を使って身体を鍛えるジムです。姿勢や動作を見つめ直すことから始め、一人ひとりに合った動き方を一緒に探していきます。</p><p>運動が久しぶりの方から、スポーツのための身体づくりまで。理学療法士考案のメソッドをもとに、今のあなたに合ったトレーニングを。</p><a class="text-link dark-link" href="#method">3つのステップを見る <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <div class="wrap principles"><div><span>BODY CONTROL</span><p>自分の身体を、使いこなす。</p></div><div><span>PERSONAL SUPPORT</span><p>一人ひとりの動きに、向き合う。</p></div><div><span>YOUR OWN PACE</span><p>変化を確かめ、自分のペースで。</p></div></div>
+    </section>
+
+    <section id="method" class="section method-section">
+      <img class="ambient-photo method-background" src="assets/bay-bodyweight-training.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / OUR METHOD</p><h2>あなたの身体から、<br>始まるトレーニング。</h2></div><p>評価、指導、振り返り。<br>3つのステップで、動きの質を育てます。</p></div>
+        <div class="method-grid">
+          <article class="method-item"><span class="method-number" aria-hidden="true">01</span><p class="eyebrow">ASSESS</p><h3>姿勢・動作を評価</h3><p>骨格や関節、動作のクセをチェック。現在の身体の状態を知り、取り組むポイントを整理します。</p></article>
+          <article class="method-item"><span class="method-number" aria-hidden="true">02</span><p class="eyebrow">TRAIN</p><h3>マンツーマンで、動きを磨く</h3><p>一人ひとりに合わせた自重トレーニング。フォームを丁寧に確認しながら、無理のない強度で進めます。</p></article>
+          <article class="method-item"><span class="method-number" aria-hidden="true">03</span><p class="eyebrow">TRACK</p><h3>変化を、次の一歩へ</h3><p>体組成や可動域、動作の変化を確認。目標と現在地を共有して、次のトレーニングにつなげます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section light">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">03 / PROGRAM & PRICE</p><h2>目的と暮らしに、<br>合うプランを。</h2></div><p>スタジオでも、オンラインでも。<br>自分に合う始め方を相談できます。</p></div>
+        <div class="plan-list">
+          <article class="plan-row featured"><div class="plan-number">01</div><div class="plan-info"><p class="eyebrow">FIRST PROGRAM</p><h3>7日 ボディリセット</h3><p>初回評価と6日間のプログラム。身体の感覚を見つめ直す、入門コース。</p></div><p class="price">¥9,900<span>/ 7日間</span></p><a class="plan-link" href="#booking" data-plan="7日 ボディリセット">このコースを相談 <span aria-hidden="true">↗</span></a></article>
+          <article class="plan-row"><div class="plan-number">02</div><div class="plan-info"><p class="eyebrow">PERSONAL TRAINING</p><h3>パーソナルトレーニング</h3><p>マンツーマンで姿勢評価から動作改善まで。フォームを丁寧に確認。</p></div><p class="price">¥9,900<span>/ 60分</span></p><a class="plan-link" href="#booking" data-plan="パーソナルトレーニング">このコースを相談 <span aria-hidden="true">↗</span></a></article>
+          <article class="plan-row"><div class="plan-number">03</div><div class="plan-info"><p class="eyebrow">ATHLETE CONDITIONING</p><h3>アスリート育成</h3><p>競技の動きに合わせたコンディショニングと動作分析。</p></div><p class="price">¥14,300<span>/ 90分</span></p><a class="plan-link" href="#booking" data-plan="アスリート育成">このコースを相談 <span aria-hidden="true">↗</span></a></article>
+          <article class="plan-row" id="online"><div class="plan-number">04</div><div class="plan-info"><p class="eyebrow">ONLINE</p><h3>BAYトレ オンライン</h3><p>自宅でも、BAYのトレーニングを。ライブセッションと動画で継続。</p></div><p class="price">¥4,900<span>/ 月</span></p><a class="plan-link" href="#booking" data-plan="BAYトレ オンライン">このコースを相談 <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <p class="fine-print">料金・提供内容・受付状況の詳細は、お申し込み前にお問い合わせください。</p>
+      </div>
+    </section>
+
+    <section id="support" class="section support-section">
+      <video id="support-film" class="ambient-video support-film" data-src="assets/bay-balance-training.mp4" poster="assets/bay-bodyweight-training.png" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+      <div class="wrap support-layout">
+        <div class="support-copy"><p class="eyebrow">04 / PERSONAL SUPPORT</p><h2>身体を理解する。<br>だから、向き合える。</h2><p>理学療法士考案のトレーニングをもとに、姿勢や動作を確認。目標だけでなく、これまでの運動経験や普段の生活にも目を向けます。</p><p>自分の身体について話せること。フォームをその場で確かめられること。その積み重ねを、BAYは大切にしています。</p><a class="text-link" href="#booking">トレーニングを相談する <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <button class="video-toggle" type="button" data-video="support-film" aria-controls="support-film" aria-label="背景動画を再生" title="背景動画を再生" aria-pressed="false" hidden><span aria-hidden="true">▶</span></button>
+    </section>
+
+    <section id="studios" class="section light">
+      <img class="ambient-photo studio-background" src="assets/bay-studio-interior.png" alt="" aria-hidden="true" loading="lazy">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">05 / STUDIO</p><h2>宮崎で、あなたの<br>トレーニングを。</h2></div><p>日南・都城の2つのスタジオ。<br>最新の受付状況はInstagramでご案内します。</p></div>
+        <div class="studio-grid">
+          <article class="studio-item"><p class="studio-en">NICHINAN</p><div class="studio-title"><h3>日南店</h3><span>宮崎県日南市</span></div><p>アクセス・営業時間・空き状況は<br>店舗へお問い合わせください。</p><a class="text-link dark-link" href="https://www.instagram.com/bay_traininggym/" target="_blank" rel="noopener noreferrer">日南店について問い合わせ <span aria-hidden="true">↗</span></a></article>
+          <article class="studio-item"><p class="studio-en">MIYAKONOJO</p><div class="studio-title"><h3>都城店</h3><span>宮崎県都城市</span></div><p>アクセス・営業時間・空き状況は<br>店舗へお問い合わせください。</p><a class="text-link dark-link" href="https://www.instagram.com/bay_traininggym/" target="_blank" rel="noopener noreferrer">都城店について問い合わせ <span aria-hidden="true">↗</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow" class="section flow-section">
+      <div class="wrap"><div class="section-heading"><div><p class="eyebrow">06 / FIRST VISIT</p><h2>体験までの、3ステップ。</h2></div><p>まずは、ご希望を聞かせてください。</p></div>
+        <ol class="flow-grid"><li><span class="flow-number">01</span><h3>Instagramで相談</h3><p>希望する店舗やコース、トレーニングの目的をDMでお知らせください。</p></li><li><span class="flow-number">02</span><h3>内容・日時を確認</h3><p>担当者と体験内容、料金、日時を相談。持ち物もあわせて確認します。</p></li><li><span class="flow-number">03</span><h3>身体を知る体験へ</h3><p>現在の状態や目標を共有し、あなたに合うトレーニングを相談します。</p></li></ol>
+      </div>
+    </section>
+
+    <section id="faq" class="section light">
+      <div class="wrap faq-layout"><div><p class="eyebrow">07 / FAQ</p><h2>はじめる前の、<br>気になること。</h2></div>
+        <div class="faq-list">
+          <details><summary><span>自重トレーニングとは何ですか？</span></summary><p>自分の体重を負荷として使うトレーニングです。BAYでは姿勢やフォームを確認しながら、一人ひとりに合うメニューを相談していきます。</p></details>
+          <details><summary><span>運動経験が少なくても相談できますか？</span></summary><p>はい。運動経験や現在の身体の状態、目標をお知らせください。内容や強度について、体験前に担当者と相談できます。</p></details>
+          <details><summary><span>どのコースを選べばよいかわかりません。</span></summary><p>コースが決まっていなくてもお問い合わせいただけます。目的、通いやすい店舗、希望する頻度をDMでお知らせください。</p></details>
+          <details><summary><span>体験の予約方法と持ち物を教えてください。</span></summary><p>Instagramの公式アカウントへDMをお送りください。日時、料金、持ち物は担当者からの案内をご確認ください。</p></details>
+          <details><summary><span>オンラインでも受けられますか？</span></summary><p>「BAYトレ オンライン」をご用意しています。参加方法やスケジュール、提供内容はお問い合わせください。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section booking-section">
+      <div class="wrap booking-layout"><div><p class="eyebrow">YOUR NEXT MOVE</p><h2>次の一歩は、<br>あなたのペースで。</h2><p>体験のご相談・お問い合わせは、Instagramへ。</p></div><div class="booking-action"><p id="selected-plan" aria-live="polite">コースが決まっていなくても、ご相談いただけます。</p><a class="button" href="https://www.instagram.com/bay_traininggym/" target="_blank" rel="noopener noreferrer">Instagramで体験を相談 <span aria-hidden="true">↗</span></a><span class="instagram-handle">@bay_traininggym</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><a class="footer-brand" href="#top"><img src="assets/bay-monogram-logo.png" alt="BAY training gym" width="198" height="210"></a><div class="footer-links"><a href="#about">BAYについて</a><a href="#plans">コース・料金</a><a href="#studios">店舗</a><a href="#flow">体験の流れ</a><a href="#faq">よくある質問</a><a href="profile.html">自己紹介</a><a href="https://www.instagram.com/bay_traininggym/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div></div><div class="wrap footer-bottom"><small>© BAY TRAINING GYM</small><span>MIYAZAKI, JAPAN</span><a href="#top">PAGE TOP ↑</a></div></footer>
+  <div class="mobile-booking"><a href="#plans">コース・料金</a><a href="#booking">体験を相談する <span aria-hidden="true">↗</span></a></div>
 </body>
 </html>
